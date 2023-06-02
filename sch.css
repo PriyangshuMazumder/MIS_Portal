@@ -1,0 +1,42 @@
+.Head {
+    font-size: 4ch;
+}
+
+body {
+    align-content: center ;
+    padding-top: 2% ;
+    padding-bottom: 2% ;
+    padding-left: 2% ;
+    padding-right: 2% ;
+}
+
+.wrapper {
+    /* height: 8%; */
+    /*This part is important for centering*/
+    /* display: grid; */
+    text-align: center;
+    font-size: 5ch;
+    font-family: 'Roboto Mono';
+    font-weight:bold;
+  }
+
+  .typinganim {
+    width: 22ch;
+    animation: typing 2s steps(24), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    /* font-family: monospace; */
+    /* font-size: 2em; */
+  }
+  
+  @keyframes typing {
+    from {width: 0;}
+    to { width: 5;}
+  }
+      
+  @keyframes blink {
+    10%{
+      border-color: transparent;
+    }
+  }
